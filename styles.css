@@ -1,0 +1,466 @@
+/**********************************/
+/* 0. Variáveis
+/* 1. Estilos Gerais
+/* 3. Header e Menu
+/* 4. Quem somos
+/* 4. Nossos cursos
+/* 5. Planos
+/* 6. Características
+/* 7. Newsletter
+/* 8. Footer
+/* 9. Media Query
+
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+    --clr-green-dark: #049A40;
+    --clr-green-light: #0BF96A;
+    --clr-pink-dark: #E10BF0;
+    --clr-pink-light: #F3A0FD;
+    --clr-white: #F5F5F5;
+}
+
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-white);    
+}
+a,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--clr-pink-dark);
+    font-weight: bold;
+}
+
+.hr {
+    border: none;
+    background-color: var(--clr-pink-dark);
+    height: 2px;
+    margin: 50px auto;
+    width: 20%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.section__titulo {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px;
+}
+
+.color-div__green-light {
+    width: 10px;
+    height: 20px;
+    display: block;
+    background-color: var(--clr-green-light);
+}
+
+.color-div__green-dark {
+    width: 10px;
+    height: 20px;
+    display: block;
+    background-color: var(--clr-green-dark);
+}
+
+.color-div__pink-dark {
+    width: 10px;
+    height: 20px;
+    display: block;
+    background-color: var(--clr-pink-dark);
+}
+
+li {
+    list-style: none;
+}
+/**********************************/
+/* 2. Header e Menu
+/**********************************/
+
+.menu {
+    background-color: var(--clr-green-light);
+    width: 100%;
+}
+
+.menu-c {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav__link {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/**********************************/
+/* 3. Quem somos
+/**********************************/
+
+.somos-c {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.somos-c__descricao {
+    flex: 6 1 160px;
+}
+
+.somos-c__img {
+    flex: 1 1 350px;
+}
+
+/**********************************/
+/* 4. Nossos cursos
+/**********************************/
+
+.cursos-c {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cursos-c__card {
+    width: 290px;
+    margin: 0 10px;
+}
+
+.card__titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cursos-c__card p {
+    text-align: justify;
+}
+
+/**********************************/
+/* 5. Planos
+/**********************************/
+
+#planos {
+    background-color: var(--clr-pink-light);
+}
+
+.planos-c {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.planos-c__cards {
+    width: 270px;
+    border: 2px solid var(--clr-green-light);
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.planos-c__titulo {
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.planos-c__valor {
+  display: flex;
+  justify-content: center;
+}
+
+.planos-c__valor sup {
+    margin-right: 3px;
+    font-weight: bolder;
+}
+.planos-c__valor h2 {
+    font-size: 2rem;
+}
+
+.hr-card {
+    width: 30px;
+    margin: 6px auto;
+    border: 1px solid;
+    color: var(--clr-green-light);
+}
+
+.planos-c__list {
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.planos-c__itens {
+    display: flex;
+    align-items: center;
+}
+
+.planos-c__itens::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: block;
+    margin-right: 3px;
+    background-color: var(--clr-green-light);
+    border-radius: 5px;
+}
+
+.planos__btn {
+    border: 2px solid var(--clr-green-light);
+    padding: 5px;
+    width: 170px;
+    margin:  5px auto;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#plano-ultra {
+    border: 3px solid var(--clr-pink-dark);
+    background-color: var(--clr-green-light);
+}
+
+#plano-ultra .planos-c__itens::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: block;
+    margin-right: 3px;
+    background-color: var(--clr-pink-dark);
+    border-radius: 5px;
+}
+
+#plano-ultra a {
+    border: 2px solid var(--clr-pink-dark);
+}
+
+/**********************************/
+/* 6. Caracteristicas
+/**********************************/
+
+.caracteristicas-c {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas-c-descricao {
+    display: flex;
+    align-items: center;
+}
+
+.caracteristicas-c-descricao .card__titulo {
+    text-align: unset;
+    margin: 0 0 0 5px;
+}
+
+.caracteristicas-c__bloco-coluna {
+    width: 250px;
+    margin: 20px 20px;
+}
+.caracteristicas-c__bloco-coluna p {
+    margin-bottom: 20px;
+}
+
+/**********************************/
+/* 7. Newsletter
+/**********************************/
+
+.newsletter {
+    background-color: var(--clr-green-light);
+    width: 100%;
+}
+
+.newsletter-c {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.newsletter-c__input {
+    display: flex;
+    background-color: var(--clr-pink-dark);
+    padding: 10px;
+}
+
+button {
+    background-color: var(--clr-pink-dark);
+    cursor: pointer;
+    border: none;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button:hover {
+    color: var(--clr-green-light);
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    width: 300px;
+}
+
+/**********************************/
+/* 8. Footer
+/**********************************/
+
+footer {
+    background-color: var(--clr-pink-light);
+    width: 100%;
+}
+
+.footer-c {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-c a {
+    color: var(--clr-green-light);
+}
+
+.footer-c a:hover {
+    font-weight: bold;
+}
+
+/**********************************/
+/* 10 Media Query
+/**********************************/
+
+@media (max-width: 260px) {
+    .intro {
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+
+    .section__titulo {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
+@media (max-width: 717px) {
+
+    .menu-c__logo {
+        margin: 0 auto;
+    }
+
+    .nav {
+        margin: 0 auto;
+    }
+    .footer-c__descricao {
+        margin: 0 auto;
+    }
+  
+}
+
+@media (max-width: 525px) {
+    .nav__list {
+      margin: 0 auto;
+    }
+
+
+}
+
+
+
+@media (max-width: 618px) {
+    .newsletter-c {
+        justify-content: center;
+    }
+    .newsletter-c__titulo {
+        margin-bottom: 20px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .newsletter-c__titulo p {
+        text-align: center;
+    }
+    .footer-c__descricao p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 432px) {
+    button {
+        font-size: 12px;
+    }
+
+    input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 928px) {
+    .cursos-c {
+        justify-content: center;
+    }
+}
